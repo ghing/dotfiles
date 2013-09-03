@@ -9,8 +9,5 @@ Uses [fresh](http://freshshell.com/).
 sudo apt-get install vim
 sudo apt-get install ctags
 sudo apt-get install git
-bash -c "`curl -sL get.freshshell.com`"
-git clone https://github.com/ghing/dotfiles.git ~/.dotfiles
-cp ~/.dotfiles/freshrc ~/.freshrc
-fresh
+FRESH_LOCAL_SOURCE=ghing/dotfiles bash <(curl -sL get.freshshell.com)
 ```
