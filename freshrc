@@ -16,9 +16,8 @@ fresh ghing/dotfiles config/pythonrc --file=~/.pythonrc
 fresh ghing/dotfiles shell/aliases/\*
 fresh ghing/dotfiles shell/\*
 
-fresh shell/nodejs.sh
-fresh shell/golang.sh
-fresh shell/ec2_api_tools.sh
+# Add in any local shell files
+fresh shell/\*
 
 fresh ghing/vim-config . --file=~/.vim/
 fresh ghing/vim-config vimrc --file=~/.vimrc
