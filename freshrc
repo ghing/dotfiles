@@ -19,3 +19,6 @@ fresh ghing/dotfiles shell/\*
 fresh shell/nodejs.sh
 fresh shell/golang.sh
 fresh shell/ec2_api_tools.sh
+
+fresh ghing/vim-config . --file=~/.vim/
+fresh ghing/vim-config vimrc --file=~/.vimrc
