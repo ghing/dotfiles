@@ -1,0 +1,21 @@
+# freshshell.com
+#
+# Examples:
+#
+#   fresh twe4ked/dotfiles shell/functions.sh
+#   fresh jasoncodes/dotfiles aliases/rails.sh
+#   fresh jasoncodes/dotfiles config/tmux.conf --file
+#
+# See http://freshshell.com/readme for documentation.
+
+fresh freshshell/fresh bin/fresh --bin
+
+fresh ghing/dotfiles config/tmux.conf --file=~/.tmux.conf
+fresh ghing/dotfiles config/pythonrc --file=~/.pythonrc
+
+fresh ghing/dotfiles shell/aliases/\*
+fresh ghing/dotfiles shell/\*
+
+fresh shell/nodejs.sh
+fresh shell/golang.sh
+fresh shell/ec2_api_tools.sh
