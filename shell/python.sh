@@ -11,3 +11,6 @@ fi
 if [ -f "$HOME/.pythonrc" ]; then
     export PYTHONSTARTUP="$HOME/.pythonrc"
 fi
+
+# Make sure ropevim folder is on my PYTHONPATH
+export PYTHONPATH=$PYTHONPATH:$HOME/.vim/bundle/ropevim
