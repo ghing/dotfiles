@@ -13,4 +13,9 @@ try:
 except IOError:
     pass
 atexit.register(readline.write_history_file, history_file)
-readline.parse_and_bind('tab: complete')
+if 'libedit' in readline.__doc__:
+    # Mac OS doesn't ship with GNU readline. Instead it ships with BSD libedit
+    # See http://stackoverflow.com/a/7116997/386210
+    readline.parse_and_bind("bind ^I rl_complete")
+else:
+    readline.parse_and_bind('tab: complete')
