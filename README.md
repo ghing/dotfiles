@@ -11,3 +11,21 @@ sudo apt-get install ctags
 sudo apt-get install git
 FRESH_LOCAL_SOURCE=ghing/dotfiles bash <(curl -sL get.freshshell.com)
 ```
+
+## Updating dotfiles and dependencies
+
+```
+fresh up
+```
+
+## Included configuration
+
+### tmux
+
+Support for [Powerline](https://powerline.readthedocs.io/en/latest/usage/other.html#tmux-statusline) assumes that you have installed it using [pipx](https://github.com/pipxproject/pipx/) and have set the `POWERLINE_ROOT` environment variable.
+
+You could set it with a line like this in `~/.bash_profile`:
+
+```
+export POWERLINE_ROOT=$(pipx runpip powerline-status show powerline-status | grep 'Location:' | sed  's/Location: //g')
+```
