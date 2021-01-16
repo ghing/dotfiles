@@ -3,7 +3,7 @@
 if [[ $platform == 'macosx' ]]; then
   POWERLINE_ROOT="$HOME/Library/Python/2.7/lib/python/site-packages/powerline"
 else
-  POWERLINE_ROOT="$HOME/.local/lib/python2.7/site-packages/powerline"
+  POWERLINE_ROOT="$HOME/.local/lib/python3.8/site-packages/powerline"
 fi
 
 if [ -d "$POWERLINE_ROOT" ]; then 
