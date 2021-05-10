@@ -12,6 +12,12 @@ sudo apt-get install git
 FRESH_LOCAL_SOURCE=ghing/dotfiles bash <(curl -sL get.freshshell.com)
 ```
 
+Then, add this line to your `~/.bash_profile`:
+
+```
+source ~/.fresh/build/shell.sh
+```
+
 ## Updating dotfiles and dependencies
 
 ```
