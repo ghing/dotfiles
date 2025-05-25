@@ -1,6 +1,6 @@
 # Powerline
 
-POWERLINE_ROOT=$(pipx runpip powerline-status show powerline-status | grep 'Location:' | sed  's/Location: //g')/powerline
+POWERLINE_ROOT="$(find $(uv tool dir) -type d -name site-packages)/powerline"
 
 if [ -d "$POWERLINE_ROOT" ]; then 
   powerline-daemon -q
