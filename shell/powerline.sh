@@ -1,6 +1,6 @@
 # Powerline
 
-POWERLINE_ROOT="$(find $(uv tool dir) -type d -name site-packages)/powerline"
+POWERLINE_ROOT="$(find $(uv tool dir) -type d -name site-packages | grep powerline)/powerline"
 
 if [ -d "$POWERLINE_ROOT" ]; then 
   powerline-daemon -q
