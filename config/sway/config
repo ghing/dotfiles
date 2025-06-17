@@ -249,4 +249,13 @@ bar {
     }
 }
 
+#
+# Notifications
+#
+# Use SwayNotificationCenter (https://github.com/ErikReider/SwayNotificationCenter)
+# Start the notification daemon
+exec swaync
+# Set up the key bindings to toggle the control center
+bindsym $mod+Shift+n exec swaync-client -t -sw
+
 include /etc/sway/config.d/*
