@@ -74,6 +74,13 @@ input "1267:5:Elan_Touchpad" {
        middle_emulation enabled
 }
 
+input "type:keyboard" {
+  # Enable the compose key
+  # See https://help.ubuntu.com/stable/ubuntu-help/tips-specialchars.html.en#compose
+  xkb_options  "compose:ralt"
+}
+
+
 ### Key bindings
 #
 # Basics:
